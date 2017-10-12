@@ -41,7 +41,7 @@ static int rproc_cos(runt_vm *vm, runt_ptr p)
 
     rc = runt_ppop(vm, &s);
     RUNT_ERROR_CHECK(rc);
-    out = sin(s->f);
+    out = cos(s->f);
     
     rc = runt_ppush(vm, &s);
     RUNT_ERROR_CHECK(rc);
